@@ -14,8 +14,6 @@ echo "ENV_DIR=$ENV_DIR"
 
 echo "contents of cache dir:"
 ls $CACHE_DIR
-find $CACHE_DIR
 
 echo "contents of build dir:"
 ls $BUILD_DIR
-find $BUILD_DIR
