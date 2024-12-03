@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+echo "buildpack sandbox"
+exit 0

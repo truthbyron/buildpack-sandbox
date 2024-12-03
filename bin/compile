@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# bin/compile <build-dir> <cache-dir>
+
+set -eo pipefail
+
+BUILD_DIR=$1
+CACHE_DIR=$2
+ENV_DIR=$3
+
+echo "Our arguments are:"
+echo "BUILD_DIR=$BUILD_DIR"
+echo "CACHE_DIR=$CACHE_DIR"
+echo "ENV_DIR=$ENV_DIR"
+
+echo "contents of cache dir:"
+cache_files=$(ls $CACHE_DIR)
+echo $cache_files
