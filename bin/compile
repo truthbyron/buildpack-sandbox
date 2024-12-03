@@ -13,7 +13,16 @@ echo "CACHE_DIR=$CACHE_DIR"
 echo "ENV_DIR=$ENV_DIR"
 
 echo "contents of cache dir:"
-ls $CACHE_DIR
+ls -a $CACHE_DIR
 
 echo "contents of build dir:"
-ls $BUILD_DIR
+ls -a $BUILD_DIR
+
+echo "deleting caching dir for fun"
+rm -rf \
+           "${CACHE_DIR}/.heroku/python" \
+           "${CACHE_DIR}/.heroku/python-poetry" \
+           "${CACHE_DIR}/.heroku/python-stack" \
+           "${CACHE_DIR}/.heroku/python-version" \
+           "${CACHE_DIR}/.heroku/src" \
+           "${CACHE_DIR}/.heroku/requirements*.txt"
