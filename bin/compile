@@ -14,9 +14,7 @@ echo "ENV_DIR=$ENV_DIR"
 
 echo "contents of cache dir:"
 ls -a $CACHE_DIR
-
-echo "contents of build dir:"
-ls -a $BUILD_DIR
+ls -a $CACHE_DIR/.heroku
 
 echo "deleting caching dir for fun"
 rm -rf \
@@ -26,3 +24,8 @@ rm -rf \
            "${CACHE_DIR}/.heroku/python-version" \
            "${CACHE_DIR}/.heroku/src" \
            "${CACHE_DIR}/.heroku/requirements*.txt"
+echo "contents of cache dir:"
+ls -a $CACHE_DIR
+ls -a $CACHE_DIR/.heroku
+echo "contents of build dir:"
+ls -a $BUILD_DIR
