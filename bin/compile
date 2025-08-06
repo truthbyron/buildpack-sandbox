@@ -13,17 +13,22 @@ echo "CACHE_DIR=$CACHE_DIR"
 echo "ENV_DIR=$ENV_DIR"
 
 echo "contents of cache dir:"
+echo $CACHE_DIR
 ls -a $CACHE_DIR
+echo $CACHE_DIR/.heroku
 ls -a $CACHE_DIR/.heroku
+echo $CACHE_DIR/.heroku/python/src
+ls -a $CACHE_DIR/.heroku/python/src
 
-echo "deleting caching dir for fun"
-rm -rf \
-           "${CACHE_DIR}/.heroku/python" \
-           "${CACHE_DIR}/.heroku/python-poetry" \
-           "${CACHE_DIR}/.heroku/python-stack" \
-           "${CACHE_DIR}/.heroku/python-version" \
-           "${CACHE_DIR}/.heroku/src" \
-           "${CACHE_DIR}/.heroku/requirements*.txt"
+# echo "deleting caching dir for fun"
+# rm -rf \
+#            "${CACHE_DIR}/.heroku/python" \
+#            "${CACHE_DIR}/.heroku/python-poetry" \
+#            "${CACHE_DIR}/.heroku/python-stack" \
+#            "${CACHE_DIR}/.heroku/python-version" \
+#            "${CACHE_DIR}/.heroku/src" \
+#            "${CACHE_DIR}/.heroku/requirements*.txt" \
+#            "${CACHE_DIR}/requirements*.txt"
 echo "contents of cache dir:"
 ls -a $CACHE_DIR
 ls -a $CACHE_DIR/.heroku
